@@ -1,0 +1,101 @@
+[{
+  "id": 1,
+  "title":"Django 개인 블로그",
+  "language": ["Django", "HTML", "CSS", "Javascript"],
+  "summary": "Django를 사용해서 간단한 개인 블로그",
+  "description": "Django를 사용해서 간단한 개인 블로그를 제작했습니다. CRUD가 가능하게 만들고, 관리자 로그인과 회원가입등 다양한 기능들을 구현했습니다.",
+  "photo": [],
+  "url": "",
+  "github": "https://github.com/H0zzae/DjangoBlog",
+  "date": "2020-08-02"
+},{
+  "id": 2,
+  "title":"생활관 막내",
+  "language": ["HTML", "CSS", "Javascript", "ReactJS"],
+  "summary": "군생활 관련 웹/앱 프로젝트",
+  "description": "군생활 관련 웹/앱 프로젝트입니다. 군인들의 소속 부대 식단표와 영양분석, 그리고 PX인기상품과 전역일 계산기와, 나라사랑카드 혜택을 담은 웹/앱 프로젝트입니다. 여기서 저는 프론트엔드 개발과 전체적인 디자인을 맡았고, 랜딩페이지와 전역일 계산기, 그리고 PX api 패칭을 주로 담당했습니다. 반응형으로 제작되었고 UI/UX에 대해 많은 공부를 할 수 있었던 프로젝트입니다.",
+  "photo": [],
+  "url": "",
+  "github": "https://github.com/KMU-WINK/hssp-web",
+  "date": "2020-08-09"
+},{
+  "id": 3,
+  "title":"하오리",
+  "language": ["HTML", "CSS", "Javascript"],
+  "summary": "Youtube API를 활용한 프로젝트",
+  "description": "백종원 유튜브에 올라온 레시피들을 웹페이지로 한눈에 정리해서 볼 수 있도록 구현한 프로젝트입니다.youtube api를 이용하여 백종원 youtube에 올라온 데이터들을 받아와 필요한 데이터들을 출력하고, 영상까지 이어지도록 하는 요리 보조 웹 서비스를 간단하게 구현해 봤습니다.",
+  "photo": [],
+  "url": "https://h0zzae.github.io/OneDay5minutesCook/",
+  "github": "https://github.com/H0zzae/OneDay5minutesCook",
+  "date": "2020-09-09"
+},{
+  "id": 4,
+  "title":"도서관리시스템",
+  "language": ["HTML", "CSS", "Javascript", "Vue.js"],
+  "summary": "도서 대여및 반납 시스템 프로젝트",
+  "description": "동아리방에 있는 서적들을 체계적으로 관리하기 위한 도서 대여및 반납 시스템입니다. 도서관리 시스템 프로젝트에서 프론트엔드 개발을 맡았습니다. 특히 신경써서 개발 한 부분은 컴포넌트들의 재사용이 가능하도록 한 부분과 백엔드에서 제공하는 api들을 연동하는 부분을 신경써서 작업했었습니다. 게다가 여러 프론트엔드 개발자들과 서로 맡은 부분들에 대해 논의하고 백엔드에서 받아올 데이터들을 구상했었던 것들이 기억에 남습니다.",
+  "photo": [],
+  "url": "",
+  "github": "https://github.com/KMU-WINK/wink-library-web-frontend",
+  "date": "2021-01-24"
+},{
+  "id": 5,
+  "title":"PROFET Demo page",
+  "language": ["HTML", "CSS", "Javascript", "Ajax"],
+  "summary": "PROFET 연구의 데모 시연 페이지",
+  "description": "CNN 내부 모델 아키텍처의 구현을 직접 밝히지 않고도 성능을 예측할 수 있는 모델인 PROFET의 데모 시연 페이지입니다.연구 내용에 맞춰 데모 시연이 가능하게끔 웹페이지 제작을 진행했습니다.",
+  "photo": [],
+  "url": "https://anonymous-profet.github.io/profet/demo/demo.html",
+  "github": "https://github.com/anonymous-profet/profet",
+  "date": "2021-07-01"
+},{
+  "id": 6,
+  "title":"비록(B_log)",
+  "language": ["HTML", "CSS", "Javascript", "ReactJS", "AWS EC2", "MongoDB"],
+  "summary": "가끔씩 떠오르는 흑역사들을 기록하고 관리하는 웹/앱 프로젝트",
+  "description": "가끔씩 떠오르는 흑역사들을 기록하고 관리하는 웹/앱 입니다. 조형대와 협업해서 진행했던 프로젝트입니다. 다른 학과사람들과 협업하면서 DesignThinking Process와 제품을 기획하는데 필요한 단계들을 배울 수 있었습니다. 뿐만 아니라 전문적인 디자인 팀들과 협업할 수 있는 좋은 경험을 할 수 있었습니다. 개발이 완료 된 후, 전시회를 통해 개발된 어플리케이션을 사용해 보는 사람들의 반응을 살펴볼 수 있어 기억에 남는 프로젝트입니다.",
+  "photo": [],
+  "url": "",
+  "github": "https://github.com/KMU-WINK/dark-chapter-web",
+  "date": "2021-07-30"
+},{
+  "id": 7,
+  "title":"SpotRank",
+  "language": ["HTML", "CSS", "Javascript", "ReactJS", "AWS Timestream", "Ajax"],
+  "summary": "Spot Instance 연구 데모 페이지",
+  "description": "AWS가 제공하는 Spot instance에 대한 정보의 신뢰성에 대해 여러가지 관점으로 분석한 연구의 데모 페이지입니다.홈페이지의 개발은 ReactJs를 사용하여 개발되었고, 평소에 다루기 힘든 많은양의 데이터들을 다룰 수 있었던 경험이었습니다. 또한, AWS의 Timestream이라는 새로운 기술을 접할 수 있어 좋은 경험이었습니다.",
+  "photo": [],
+  "url": "https://spotrank.github.io/spotrank-dev/",
+  "github": "https://github.com/spotrank/spotrank",
+  "date": "2022-01-05"
+},{
+  "id": 8,
+  "title":"DDPS 홈페이지",
+  "language": ["HTML", "CSS", "Javascript", "Jekyll"],
+  "summary": "분산 데이터 처리 연구실의 공식 홈페이지",
+  "description": "분산 데이터 처리 연구실의 공식 홈페이지입니다.평소에 접하기 힘든 jekyll을 사용해 볼 수 있었던 프로젝트 입니다. 기존 홈페이지의 데이터를 새로운 홈페이지의 데이터로 이전할 때의 주의점을 배울 수 있었습니다.",
+  "photo": [],
+  "url": "http://ddps.cloud/",
+  "github": "https://github.com/ddps-lab/ddps-homepage",
+  "date": "2022-01-20"
+},{
+  "id": 9,
+  "title":"DoS Demo Page",
+  "language": ["HTML", "CSS", "Javascript"],
+  "summary": "SPMM 구현 서비스 연구 데모 페이지",
+  "description": "SPMM 지연시간 예측 모델을 사용하여 Matrix를 Dense 형식으로 변환하거나 Sparse 형식으로 유지하는 최적의 SPMM 구현 서비스의 데모 페이지입니다. DoS 시스템의 데모 시연을 위한 페이지 구현업무를 진행했습니다.",
+  "photo": [],
+  "url": "https://kmu-dos.github.io/",
+  "github": "https://github.com/kmu-dos/kmu-dos.github.io",
+  "date": "2022-02-01"
+},{
+  "id": 10,
+  "title":"Icare",
+  "language": ["Typescript", "ReactNative", "AWS EC2", "AWS RDS", "AWS S3", "MySQL", "ExpressJS", "RaspberryPi"],
+  "summary": "아이돌보미와 부모간의 업무 소통을 위한 어플리케이션",
+  "description": "아이돌보미와 부모간의 업무 소통을 위한 어플리케이션입니다. 안드로이드와 IOS모두를 지원하는 하이브리드 언어인 ReactNative를 사용하고, TypeScript를 사용해 개발되었습니다.백엔드는 express를 사용하여 개발되었습니다. 서버는 AWS를 활용하여 구현되었습니다.",
+  "photo": [],
+  "url": "",
+  "github": "https://github.com/kookmin-sw/capstone-2022-05",
+  "date": "2022-03-01"
+}]
