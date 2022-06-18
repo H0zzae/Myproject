@@ -9,17 +9,23 @@ import data from '../data.json';
 import Modal from '@mui/material/Modal';
 
 function Home(){
-    const [proj, setProj] = useState(data);
-    const [lang, setLang] = useState([]);
-    const [filter, setFilter] = useState([]);
-    const [detail, setDetail] = useState({title : "",date:"",language:[],description:"",url :"", github:""});
-    const [modal, setModal] = useState(false);
+    const [proj, setProj] = useState(data); //필터링 된 프로젝트가 들어갈 변수
+    const [lang, setLang] = useState([]); //모든 프로젝트에 사용된 언어들을 모아두는 변수
+    const [filter, setFilter] = useState([]); //사용자가 선택하는 필터값
+    const [detail, setDetail] = useState({title : "",date:"",language:[],description:"",url :"", github:""}); //사용자가 더보기를 누른 데이터
+    const [modal, setModal] = useState(false); //모달 창의 오픈or클로즈 여부 ture: 모달 창 open , false : 모달 창 close
+
+    //페이지 처음 로드시 실행됨
     useEffect(() => {
         countLang();
     },[])
+
+    //필터의 값이 변경될 때 마다 실행됨
     useEffect(() => {
         FilteredFunction();
     },[filter])
+
+    //모든 프로젝트에 사용된 언어들을 count
     const countLang = () => {
         let language = new Set();
        data.map((d) => {
@@ -27,6 +33,8 @@ function Home(){
        })
         setLang([...language])
     }
+
+    //필터 값을 설정하는 함수
     const selected = ({target}) => {
         let l = target.value
         let newArray = new Set(filter);
@@ -37,6 +45,8 @@ function Home(){
         }
         setFilter([...newArray])
     }
+
+    //필터가 설정되면, 해당 설정된 값에 해당하는 프로젝트를 반환함
     const FilteredFunction = () =>{
         let filteredData = new Set();
         if (filter.length>0) {
@@ -54,13 +64,19 @@ function Home(){
             setProj(data);
         }
     }
+
+    //프로젝트의 상세 정보 보기를 클릭시 실행되는 함수
     const showMore = ({target}) => {
         setDetail(data[target.value-1]);
         controlModal();
     }
+
+    //Modal이 열리는 지 아닌지의 값을 관리함
     const controlModal = () => {
         setModal(!modal);
     }
+
+    //페이지 구성
     return(
         <div>
             <style.Header>
