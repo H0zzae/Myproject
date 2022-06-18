@@ -12,7 +12,7 @@ function Home(){
     const [proj, setProj] = useState(data);
     const [lang, setLang] = useState([]);
     const [filter, setFilter] = useState([]);
-    const [detail, setDetail] = useState({title : "",date:"",language:"",description:"",url :"", github:""});
+    const [detail, setDetail] = useState({title : "",date:"",language:[],description:"",url :"", github:""});
     const [modal, setModal] = useState(false);
     useEffect(() => {
         countLang();
