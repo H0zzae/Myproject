@@ -6,10 +6,14 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import data from '../data.json';
+import Modal from '@mui/material/Modal';
+
 function Home(){
     const [proj, setProj] = useState(data);
     const [lang, setLang] = useState([]);
     const [filter, setFilter] = useState([]);
+    const [detail, setDetail] = useState({title : "",date:"",language:"",description:"",url :"", github:""});
+    const [modal, setModal] = useState(false);
     useEffect(() => {
         countLang();
     },[])
@@ -50,6 +54,13 @@ function Home(){
             setProj(data);
         }
     }
+    const showMore = ({target}) => {
+        setDetail(data[target.value-1]);
+        controlModal();
+    }
+    const controlModal = () => {
+        setModal(!modal);
+    }
     return(
         <div>
             <style.Header>
@@ -65,18 +76,36 @@ function Home(){
                 </style.languageGroup>
             </style.Filter>
             <style.ProjectList>
+                <Modal
+                    open={modal}
+                    onClose={controlModal}
+                    aria-labelledby="modal-modal-title"
+                >
+                    <style.modalContent>
+                    <Typography variant="h5">{detail.title}</Typography>
+                    <Typography sx={{ fontSize: 14 }} style={{textAlign:"right"}} color="text.secondary" gutterBottom>{detail.date}</Typography>
+                        <ButtonGroup variant="text" style={{flexWrap:'wrap', justifyContent:'center', margin: "10px 0"}}>
+                            {detail["language"].map((lang) => (
+                                <Button size="small">{lang}</Button>
+                            ))}
+                        </ButtonGroup>
+                    <Typography style={{textAlign:"left", margin:"10px 0"}}>{detail.description}</Typography>
+                    {detail.url!=="" ? <Button href={detail.url}>Link</Button> : null}
+                    <Button href={detail.github}>GITHUB</Button>
+                    </style.modalContent>
+                </Modal>
                 {proj.map((p) => (
                     <style.ProjectCard variant="outlined">
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                 {p["date"]}
                             </Typography>
-                            <Typography variant="h5" component="div">
+                            <Typography ccomponent="div">
                                 {p["title"]}
                             </Typography>
                             <ButtonGroup variant="text" style={{flexWrap:'wrap', justifyContent:'center'}}>
                                 {p["language"].map((lang) => (
-                                    <Button size="small">{lang}</Button>
+                                    <Button size="small" onClick={selected} value={lang}>{lang}</Button>
                                 ))}
                             </ButtonGroup>
                             <Typography variant="body2" style={{margin:'10px 0'}}>
@@ -84,7 +113,7 @@ function Home(){
                             </Typography>
                         </CardContent>
                         <CardActions style={{justifyContent:'flex-end'}}>
-                            <Button size="small">Show More</Button>
+                            <Button size="small" value={p["id"]} onClick={showMore}>Show More</Button>
                         </CardActions>
                     </style.ProjectCard>
                 ))}

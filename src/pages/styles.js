@@ -44,3 +44,14 @@ export const ProjectCard = styled(Card)`
   flex-direction: column;
   justify-content: space-between;
 `;
+export const modalContent = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  box-shadow: 0 0 15px #626262;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+`;
