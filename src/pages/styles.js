@@ -46,12 +46,13 @@ export const ProjectCard = styled(Card)`
 `;
 export const modalContent = styled.div`
   position: absolute;
+  border-radius: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
   box-shadow: 0 0 15px #626262;
   background-color: #fff;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
 `;
